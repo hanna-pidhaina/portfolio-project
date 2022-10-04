@@ -3,10 +3,13 @@ font-family: 'Libre Baskerville', serif; */
 
 h1 {
     font-family: 'Libre Baskerville', serif;
-    text-align: center;
 }
-p {
+h3 {
     font-family: 'EB Garamond', serif;
     font-size: 34px;
+}
+.hero {
     text-align: center;
+    background: black;
+    padding: 100px 0;
 }
