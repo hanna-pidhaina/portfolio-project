@@ -1,15 +1,32 @@
-/* font-family: 'EB Garamond', serif;
-font-family: 'Libre Baskerville', serif; */
+/* font-family: 'Julius Sans One', sans-serif;
+font-family: 'Jura', sans-serif; */
 
 h1 {
-    font-family: 'Libre Baskerville', serif;
+  font-family: "Julius Sans One", sans-serif;
+  color: white;
+  font-size: 70px;
 }
 h3 {
-    font-family: 'EB Garamond', serif;
-    font-size: 34px;
+  font-family: "Jura", sans-serif;
+  font-size: 34px;
+  color: white;
 }
 .hero {
-    text-align: center;
-    background: black;
-    padding: 100px 0;
+  width: 100%;
+  background: black;
+  padding: 100px 0;
+  text-align: center;
+}
+.book-button {
+  padding: 15px 20px;
+  background: #36013F;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.book-button a {
+  font-family: "Jura", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
