@@ -1,7 +1,7 @@
 /* font-family: 'Julius Sans One', sans-serif;
 font-family: 'Jura', sans-serif; */
 :root {
-  --primary-color: #36013F;
+  --primary-color: #36013f;
   --shadow: 0px 0px 15px rgba(36, 122, 253, 0.4);
   --font-head: "Julius Sans One", sans-serif;
   --font-text: "Jura", sans-serif;
@@ -14,8 +14,12 @@ h1 {
 }
 h2 {
   font-family: var(--font-text);
-  font-size: 34px;
+  font-size: 35px;
   color: white;
+}
+h3 {
+  font-family: var(--font-text);
+  font-size: 35px;
 }
 .hero {
   width: 100%;
@@ -25,11 +29,32 @@ h2 {
 }
 .book-button {
   padding: 15px 20px;
-  background: #36013F;
+  background: var(--primary-color);
   text-align: center;
   font-size: 20px;
   margin-top: 20px;
   box-shadow: var(--shadow);
+}
+.photo-section {
+  text-align: center;
+}
+.learn-button {
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 5px;
+  background: rgba(36, 122, 253, 0.2);
+}
+.learn-button:hover {
+  border: 1px solid var(--primary-color);
+  background: rgba(36, 122, 253, 0.2);
+  color: var(--primary-color);
+  font-weight: 900;
+}
+.learn-button a {
+  font-family: var(--font-text);
+  color: black;
+  text-decoration: none;
 }
 .book-button a {
   font-family: var(--font-text);
@@ -37,6 +62,31 @@ h2 {
   text-decoration: none;
   font-weight: bold;
 }
-img {
-filter: drop-shadow(var(--shadow));
+.hero img {
+  filter: drop-shadow(var(--shadow));
+}
+@media (max-width: 992px) {
+  .hide-1 {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2,
+  h3 {
+    font-size: 30px;
+  }
+  .hide-2 {
+    display: none;
+  }
+  .hero {
+  padding: 40px 0;
+
+  }
+}
+.row img:hover {
+  scale: 1.1;
+  transition: all 0.5s ease-in-out;
 }
