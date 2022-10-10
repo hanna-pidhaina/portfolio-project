@@ -63,6 +63,7 @@ h3 {
 .hero img {
   filter: drop-shadow(var(--shadow));
 }
+
 @media (max-width: 992px) {
   .hide-1 {
     display: none;
@@ -73,7 +74,7 @@ h3 {
     font-size: 40px;
   }
   h2,
-  h3 {
+  h3, {
     font-size: 30px;
   }
   .hide-2 {
@@ -81,6 +82,30 @@ h3 {
   }
   .hero {
   padding: 40px 0;
-
   }
+ .about {
+    text-align: center;
+}
+  }
+.about h1 {
+  font-family: var(--font-head);
+  font-size: 70px;
+  color: black;
+}
+.about h2 {
+  font-family: var(--font-text);
+  font-size: 35px;
+  color: black;
+}
+.about-photo {
+  border-radius: 50%;
+}
+.about {
+  width: 100%;
+  padding: 40px;
+
+}
+body .body-about {
+  background-color: var(--back-color);
+
 }
