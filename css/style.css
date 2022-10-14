@@ -17,6 +17,10 @@ h3 {
   font-family: var(--font-text);
   font-size: 35px;
 }
+h4 {
+  font-family: var(--font-text);
+  font-size: 25px;
+}
 .white-text {
   color: white;
 }
@@ -31,7 +35,6 @@ h3 {
   background: var(--primary-color);
   text-align: center;
   font-size: 20px;
-  margin-top: 20px;
   box-shadow: var(--shadow);
 }
 .photo-section {
@@ -75,26 +78,25 @@ h3 {
     font-size: 40px;
   }
   h2,
-  h3, {
+  h3 {
     font-size: 30px;
   }
   .hide-2 {
     display: none;
   }
   .hero {
-  padding: 40px 0;
+    padding: 40px 0;
   }
- .content {
+  .content {
     text-align: center;
-}
   }
+}
 .content-photo {
   border-radius: 50%;
 }
 .content {
   width: 100%;
   padding: 40px;
-
 }
 .body-content {
   background-color: var(--back-color);
@@ -110,9 +112,9 @@ nav {
   font-weight: bolder;
 }
 nav li {
-display: inline;
-list-style: none;
-margin-left: 15px;
+  display: inline;
+  list-style: none;
+  margin-left: 15px;
 }
 nav li a {
   text-decoration: none;
@@ -120,4 +122,20 @@ nav li a {
 }
 nav li a.active {
   color: rgb(36, 122, 253);
+}
+.media-links a {
+  padding: 0 20px;
+  font-size: 30px;
+  color: var(--primary-color);
+}
+.media-links a:hover {
+  color: white;
+  background: black;
+  padding: 5px 14px;
+  border-radius: 50%;
+}
+.contact-box {
+  background: var(--back-color);
+  padding: 20px;
+  border-radius: 10px;
 }
