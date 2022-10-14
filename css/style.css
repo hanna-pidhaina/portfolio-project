@@ -98,5 +98,26 @@ h3 {
 }
 .body-content {
   background-color: var(--back-color);
-
+}
+nav .logo {
+  font-size: 50px;
+  color: var(--primary-color);
+}
+nav {
+  padding: 20px;
+  font-family: var(--font-text);
+  font-size: 20px;
+  font-weight: bolder;
+}
+nav li {
+display: inline;
+list-style: none;
+margin-left: 15px;
+}
+nav li a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+nav li a.active {
+  color: rgb(36, 122, 253);
 }
