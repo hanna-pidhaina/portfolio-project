@@ -4,21 +4,23 @@
   --font-head: "Julius Sans One", sans-serif;
   --font-text: "Jura", sans-serif;
   --back-color: rgba(54, 1, 63, 0.1);
+  --links:   rgb(36, 122, 253);
+
+}
+h2, h3, h4, .footer {
+  font-family: var(--font-text);
 }
 h1 {
   font-family: var(--font-head);
   font-size: 66px;
 }
 h2 {
-  font-family: var(--font-text);
   font-size: 35px;
 }
 h3 {
-  font-family: var(--font-text);
   font-size: 35px;
 }
 h4 {
-  font-family: var(--font-text);
   font-size: 25px;
 }
 .white-text {
@@ -68,29 +70,7 @@ h4 {
   filter: drop-shadow(var(--shadow));
 }
 
-@media (max-width: 992px) {
-  .hide-1 {
-    display: none;
-  }
-}
-@media (max-width: 576px) {
-  h1 {
-    font-size: 40px;
-  }
-  h2,
-  h3 {
-    font-size: 30px;
-  }
-  .hide-2 {
-    display: none;
-  }
-  .hero {
-    padding: 40px 0;
-  }
-  .content {
-    text-align: center;
-  }
-}
+
 .content-photo {
   border-radius: 50%;
 }
@@ -118,15 +98,17 @@ nav li {
 }
 nav li a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--links);
 }
 nav li a.active {
-  color: rgb(36, 122, 253);
+  color: var(--primary-color);
 }
-.media-links a {
+.media-links a, .contact-page-links a {
+ 
   padding: 0 20px;
   font-size: 30px;
-  color: var(--primary-color);
+  color: var(--links);
+  transition: all 150ms ease-in-out;
 }
 .media-links a:hover {
   color: white;
@@ -138,4 +120,36 @@ nav li a.active {
   background: var(--back-color);
   padding: 20px;
   border-radius: 10px;
+}
+.contact-page-links {
+  font-family: var(--font-text);
+  font-size: 20px;
+  font-weight: bolder;
+}
+.contact-page-links a:hover {
+  color: var(--primary-color);
+}
+@media (max-width: 992px) {
+  .hide-1 {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2,
+  h3 {
+    font-size: 30px;
+  }
+  .hide-2 {
+    display: none;
+  }
+  .hero {
+    padding: 40px 0;
+  }
+  .content {
+    text-align: center;
+    padding: 15px;
+  }
 }
